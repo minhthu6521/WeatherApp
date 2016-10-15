@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #ecf0f1;
+}
+
+
+/*Navigation bar*/
+
+.navbar {
+    min-height: 1vh !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: black;  /*Sets the text hover color on navbar*/
+}
+
+
+.navbar-default {
+    background-color: rgba(129,207,224,1);/*rgba(155, 89, 182 ,1)*/;
+    border: none;
+    transition: top 0.2s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
+}
+
+
+
+.navbar-default .navbar-nav > li > a{
+   color: white; /*Change active text color here*/
+    }
+
+.navbar-nav > li > a{
+    padding-top:3vh !important; 
+    padding-bottom: 3vh !important;
+    font-size: 3vh;
+    font-family:"Anton";
+    opacity: 1;
+    
+}
+
+.navbar-default .navbar-brand{
+    padding-top:3vh !important; 
+    padding-bottom: 3vh !important;
+    font-size: 4.5vh;
+    font-family:'Fredoka One', cursive;
+    color:black;
+    opacity: 1;
+}
+
+/*About */
+.about-content{ 
+  padding-top: 10vh !important;
+  margin-top: :120px;
+  height:90vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url('../img/header.png');
+}
+
+#about-content-content{ 
+  margin-top: 10vh;
+  padding-top: 10vh;
+  height:40vh;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3vh;
+  color: black;
+}
+
+#about-button{
+    font-family: 'Signika', sans-serif;
+    display: none;
+    text-align: center;
+    
+}
+
+
+#aboutMe{
+    display: block;
+    cursor: pointer; cursor: hand;
+    font-size: 3vh;
+    border: solid #BF55EC;
+    border-radius: 10px;
+    background-color: #BF55EC;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+#education{
+    display: block;
+    font-size: 3vh;
+    cursor: pointer; cursor: hand;
+    border: solid #BF55EC;
+    border-radius: 10px;
+    background-color: #BF55EC;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+/*Page Content*/
+.div-header{
+    
+    font-family: "Anton";
+    font-size: 5vh;
+    padding-bottom: 3vh;
+}
+
+
+.div-content{
+    font-size: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    font-family: 'Signika', sans-serif;
+}
+
+/*Skill*/
+
+.skill-content{
+    padding-bottom: 1vh;
+}
+
+/*Progress bar*/
+
+.progress-bar {
+    width: calc(100%);
+    height: 2vh;
+    background: #e0e0e0;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-bar-fill {
+    display: block;
+    width: 1%;
+    height: 2vh;
+    background: #7f8c8d;
+    border-radius: 1px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    transition: width 5s ease-in-out;
+    -webkit-transition: width 5s ease-in-out;
+}
+
+
+
+
+/*Contact*/
+
+#email{   
+    background-color: #22A7F0;
+    text-align: center;
+    vertical-align: middle;
+    height: 4vh;
+    line-height: 4vh;
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    cursor: pointer; cursor: hand;
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    -o-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+#email > a{
+    text-decoration: none;
+}
+
+#email:hover {
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25); 
+    -o-transform:scale(1.25); 
+     transform:scale(1.25);
+}
+
+
+/*Footer*/
+.footer{
+    height: 10vh;
+    background: blue;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px;
+    color:white;
+}
+
+#initial{
+    line-height: 10vh;
+    height: 10vh;
+}
+#quoteBox{
+    display: none;
+}
+
+
+
+/*For smaller screen size*/
+@media screen and (min-width:1024px){
+    #about-button {
+    display:block;
+    }
+    .navbar-default {
+    background-color: rgba(129,207,224,.6);
+    min-height: 3vh !important;
+    }
+    #quoteBox{
+        display: block;
+    }
+    #quote{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #change-quote{
+        margin-top: -5vh;
+        float:right;
+        cursor:pointer;
+    }
+    .footer{
+    height: 20vh;
+    background: blue;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px;
+    color:white;
+    }
+
+    #initial{
+    line-height: 20vh;
+    height: 20vh;
+    }
+
+}
